@@ -1,0 +1,296 @@
+/* 반응형 */
+@media (max-width: 509px){
+    /* header */
+    .headerContainer{
+        height: 4.5rem;
+    }
+    .logo{
+        width: 3.75rem;
+        height: 3rem;
+        left: 1.4rem;
+    }
+    .logo a img{
+        height: 3rem;
+    }
+
+    .hMenu{
+        width: 30%;
+        right: 1rem;
+    }
+    .hMenu li a img{
+        height: 1.2rem;
+    }
+
+    /* slide */
+    .slideContainer{
+        height: 5.875rem;
+    }
+    .slideList{
+        width: auto;
+    }
+    .slideList li{
+        width: auto;
+    }
+    .slideList li a img{
+        width: auto;
+        height: 100%;
+    }
+
+    /* .slideList li:first-child a img{
+        background: url("../images/slide01Small.png") no-repeat center/100%;
+    }
+    .slideList li:nth-child(2) a img{
+        background: url("../images/slide02Small.png") no-repeat center/100%;
+    }
+    .slideL li:last-child a img{
+        background: url("../images/slide03Small.png") no-repeat center/100%;
+    } */
+
+    .dotList{
+        width: 2rem;
+        bottom: 0rem;
+    }
+    .dotList li{
+        width: .3rem;
+        height: .3rem;
+    }
+
+    /* contents */
+    .contetnsContainer > div{
+        margin-top: 1rem
+    }
+    /* countDown */
+    .countdown{
+        width: 6.8rem;
+        height: 1.2rem;
+        top: 8.2rem;
+        left: 3%;
+    }
+    .countdown > li{
+        width: 1rem;
+        height: 1.2rem;
+        border-radius: .4rem;
+        line-height: 1.1rem;
+        font-size: .8rem;
+    }
+    .countdown > li:nth-child(3){
+        width: .4rem;
+    }
+    .countdown > li:nth-child(6){
+        width: .4rem;
+    }
+
+    /* contents01 */
+    .contents01{
+        width: 22.5rem;
+        height: 33rem;
+    }
+    .contents05{
+        width: 22.5rem;
+        height: 33rem;
+    }
+    .contentsTxt{
+        height: 2rem;
+    }
+    .mainTit{
+        font-size: .7rem;
+        padding-left: .4rem;
+    }
+    .view{
+        float: left;
+        font-size: .1rem;
+        margin-left: .5rem;
+    }
+
+    .productList{
+        height: 31rem;
+    }
+    .productList > li{
+        width: 11.4rem;
+        height: 50%;
+    }
+    .productList > li:nth-child(2){
+        width: 11rem;
+    }
+    .productTimerImg{
+        height: 7.4rem;
+        position: relative;
+    }
+
+    .productName{
+        width: 11rem;
+        padding: .2rem .1rem;
+    }
+    .productName a{
+        font-size: .5rem;
+        line-height: 1rem;
+    }
+
+    .productDcPrice{
+        height: 2.5rem;
+        margin-left: .2rem;
+        position: static;
+    }
+    .preDiscount{
+        font-size: .5rem;
+    }
+    .discount{
+        font-size: 1rem;
+    }.productDcPrice p{
+        font-size: .9rem;
+    }
+
+    .like{
+        height: 1.5rem;
+    }
+    .like img{
+        width: 1rem;
+        height: 1rem;
+        margin-left: .2rem;
+        opacity: 20%;
+    }
+    .like p{
+        top: 48%;
+        font-size: .5rem;
+        left: 1.4rem;
+        opacity: 50%;
+    }
+
+    /* contents02 */
+    .contents02{
+        width: 22.5rem;
+        height: 38rem;
+        padding-top: .2rem;
+    }
+    .contents02 > div > ul.productList{
+        width: 22.5rem;
+        height: 100%;
+    }
+
+    .contents02 > div > ul > li{
+        width: 11.2rem;
+        height: 50%;
+        margin-right: .3rem;
+    }
+    .contents02 > div > ul > li:nth-child(2){
+        margin-right: 0;
+    }
+    .contents02 > div > ul > li:nth-child(4){
+        width: 11rem;
+        margin-right: 0;
+    }
+
+    .productImg{
+        height: 11rem;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 1024px){
+    /* header */
+    .headerContainer{
+        height: 5.6rem;
+    }
+    .logo{
+        left: 2rem;
+        top: 55%;
+    }
+    .logo a img{
+        height: 4.5rem;
+    }
+
+    /* .gnb{
+        width: 43rem;
+        top: 20%;
+        left: 8.4rem;
+    }
+    .mainMenu > li > a{
+        margin: 0 1.5rem;
+    }
+
+    .subMenu > li > a{
+        font-size: .9rem;
+    } */
+
+    .hMenu{
+        width: 11rem;
+        right: 2rem;
+    }
+
+    /* slide */
+    .slideContainer{
+        /*width: 64rem;*/ /*76.875rem*//*64rem*/
+        height: 16.6875rem;
+        /* margin: 0 auto; */
+    }
+    .slideList{
+        width: 192rem; /*230.625rem*//*192rem*/
+    }
+    .slideList > li{
+        width: 64rem; /*76.875rem*//*64rem*/
+    }
+
+    /* contents */
+
+    /* countDown */
+    .countdown{
+        right: -1.4rem;
+    }
+
+    /* contents01 */
+    .view{
+        margin-right: 8rem;
+    }
+    .productList > li{
+        scale: 80%;
+        width: 20rem;
+    }
+
+    /* contents02 */
+    .contents02 > div > ul > li{
+        scale: 90%;
+        margin-right: 1.5rem;
+    }
+
+    /* contents03 */
+    .contents03 > ul > div > li{
+        scale: 90%;
+        margin-right: 1.5rem;
+    }
+
+    /* banner01 */
+    .banner01 div a img{
+        width: 89%;
+    }
+
+    /* contents04 */
+    .contents04 > div > ul > div > li{
+        scale: 90%;
+        margin-right: 1.5rem;
+    }
+
+    /* contents06 */
+    .contents06 > div > ul > div > li{
+        scale: 90%;
+        margin-right: 1.5rem;
+    }
+
+    /* banner02 */
+    .banner02 div a img{
+        width: 89%;
+    }
+
+    /* footer */
+    .fLeft{
+        padding-left: 2rem;
+    }
+
+    .fRight{
+        margin-left: -10rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .gnb{
+        display: none;
+    }
+}

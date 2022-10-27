@@ -1,0 +1,706 @@
+@charset "UTF-8";
+
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff');
+
+/* @font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    color: #333;
+    box-sizing: border-box;
+    font-family: 'Leferi Point Type White','나눔 고딕','맑은 고딕';
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* header */
+.headerContainer{
+    width: 100%;
+    height: 6.25rem;
+    position: relative;
+    border-bottom: solid 0.0625rem #ccc;
+}
+.logo{
+    width: 6.25rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3.125rem;
+}
+.logo a{
+    width: 100%;
+    height: 100%;
+}
+.logo a img{
+    height: 5rem;
+}
+
+.gnb{
+    width: 50rem;
+    height: 3rem;/*29.375rem*/
+    position: absolute;
+    top: 25%;
+    /* transform: translateY(-50%); */
+    left: 12.5rem;
+    z-index: 5;
+}
+.mainMenu{
+    width: 100%;
+    height: 100%;
+}
+.mainMenu > li{
+    height: 3.125rem;
+    position: relative;
+    float: left;
+}
+.mainMenu > li > a{
+    display: block;
+    line-height: 3.125rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: 0.2s;
+    margin: 0 2rem;
+}
+.mainMenu > li:last-child > a{
+    margin-right: 0;
+}
+.mainMenu > li:hover > a{
+    color: #ff5833;
+}
+
+.subMenu{
+    width: 100%;
+    height: 26.25rem;
+    position: absolute;
+    background: #f9f9f9;
+}
+.subMenu > li{
+    width: 100%;
+    height: 7%;
+}
+.subMenu > li > a{
+    display: block;
+    line-height: 1.875rem;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.subMenu > li:hover > a{
+    color: #ff5833;
+}
+
+.hMenu{
+    width: 12.5rem;
+    height: 1.5625rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.125rem;
+}
+.hMenu li{
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.hMenu li a{
+    width: 100%;
+    height: 100%;
+}
+.hMenu li a img{
+    height: 1.5625rem;
+}
+
+/* slide */
+.slideContainer{
+    width: 100%; /*1920px*/
+    height: 31.25rem;
+    position: relative;
+    /* background: #eee; */
+    overflow: hidden;
+}
+.slideList{
+    width: 360rem; /*5760px*/
+    height: 100%;
+    position: absolute;
+}
+.slideList li{
+    width: 120rem; /*1920px*/
+    height: 100%;
+    float: left;
+}
+.slideList li a img{
+    width: 100%;
+}
+
+.dotList{
+    width: 4.4rem;
+    height: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+}
+.dotList li{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-right: 0.652rem;
+    background: #fff;
+    border-radius: .5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.dotList li:last-child{
+    margin-right: 0;
+}
+.dotList li.selected{
+    background: #eb5405;
+}
+
+/* contents */
+.contetnsContainer{
+    width: 100%;
+    height: 289.5rem; /* contents 400px*6 + banner 200px*2 */
+    /* margin-top: 2rem; */
+}
+
+.contetnsContainer > div{
+    margin-top: 2.5rem;
+}
+
+/* countDown */
+.countdown{
+    position: absolute;
+    left: 10rem;
+}
+.countdown > li{
+    border: solid 0.0625rem #aaa;
+    border-radius: .5rem;
+    float: left;
+    width: 1.8rem;
+    height: 2.2rem;
+    text-align: center;
+    line-height: 2.1rem;
+    background: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #222;
+}
+.countdown > li:nth-child(3){
+    border: none;
+    background: transparent;
+    width: 1rem;
+}
+.countdown > li:nth-child(6){
+    border: none;
+    background: transparent;
+    width: 1rem;
+}
+
+.productList > li:nth-child(3) > .productDcPrice > .countdown{
+    right: 0;
+}
+
+/* contents01 */
+.contents01{
+    width: 100%;
+    height: 28rem;
+    /* margin-top: 2.5rem; */
+    /* background: #eee; */
+}
+
+.contentsTxt{
+    width: 100%;
+    height: 3rem;
+    /* background: #ddd; */
+}
+.mainTit{
+    display: inline;
+    line-height: 2rem;
+    /* margin-left: 2rem; */
+    color: #111;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+.view{
+    display: inline;
+    float: right;
+    line-height: 2rem;
+    /* color: #666; */
+}
+
+.productList{
+    width: 100%;
+    height: 25rem;
+    /* overflow: hidden; */
+}
+.productList > li{
+    width: 25.71rem; /*33.3%*/
+    height: 100%;
+    float: left;
+}
+.productList > li:last-child{
+    width: 23.5rem;
+}
+.productTimerImg{
+    height: 15.625rem;
+    /* position: relative; */
+}
+.productTimerImg a{
+    height: 100%;
+}
+.productTimerImg a img{
+    height: 100%;
+}
+
+.productName{
+    width: 23rem;
+    padding: .4rem 0;
+}
+.productName a{
+    display: block;
+    line-height: 1.6rem;
+    color: #111;
+    /* font-weight: bold; */
+}
+
+.productDcPrice{
+    width: 100%;
+    height: 3.5rem;
+    /* position: relative; */
+    /* background: skyblue; */
+}
+.preDiscount{
+    display: block;
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 4rem;
+}
+.discount{
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff5833;
+    margin-right: .6rem;
+}
+.productDcPrice p{
+    display: inline;
+    font-size: 1.1rem;
+}
+.productDcPrice p strong{
+    color: #111;
+}
+
+.like{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+}
+.like img{
+    width: 1.9rem;
+    height: 2rem;
+    display: inline;
+    opacity: 35%;
+}
+.like p{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 2.4rem;
+    display: inline;
+    font-size: .9rem;
+    opacity: 80%;
+}
+
+/* contents02 */
+.contents02{
+    width: 100%;
+    height: 30rem;
+    background: #d87059;
+    position: relative;
+    padding-top: 1.4rem;
+}
+
+.contents02 > div > ul.productList{
+    width: 75rem;/*68.75rem*/
+    /* margin-left: 3.125rem; */
+}
+.productSubList{
+    width: 100%; /*88.625rem*/
+    height: 100%;
+}
+.productSubList > li{
+    width: 15.625rem;
+    height: 100%;
+    float: left;
+    margin-right: 2rem;
+}
+.productSubList > li:last-child{
+    margin-right: 0;
+}
+
+.contents02 > div > ul > li{
+    width: 15.625rem;
+    margin-right: 4.125rem;
+}
+.contents02 > div > ul > li:last-child{
+    width: 15.625rem;
+    margin-right: 0;
+}
+
+.productImg{
+    height: 15.625rem;
+}
+.productImg a{
+    height: 100%;
+}
+.productImg a img{
+    height: 100%;
+}
+
+.contents02 > div > ul > li > .productName{
+    width: 17rem;
+}
+.contents02 > div > ul > li > .productDcPrice > .discount{
+    color: #eee;
+}
+.contents02 > div > ul > li > .productDcPrice > .preDiscount{
+    color: #ccc;
+}
+
+/* .productList > button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: transparent;
+    z-index: 5;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    float: left;
+    border: none;
+    opacity: 60%;
+}
+.prevBtn02{
+    left: 0;
+    background: url("../images/prevBtn.png") no-repeat center center/100%;
+}
+.nextBtn02{
+    right: 0;
+    background: url("../images/nextBtn.png") no-repeat center center/100% ;
+} */
+
+/* contents03 */
+.contents03{
+    width: 100%;
+    height: 53rem;
+}
+.contents03 > ul {
+    width: 100%;
+    height: 50rem;
+}
+.contents03 > ul > div{
+    width: 100%;
+    height: 100%;
+}
+.contents03 > ul > div > li{
+    width: 15.625rem;
+    height: 25rem;
+    margin-right: 4.1rem;
+}
+.contents03 > ul > div > li:nth-child(4){
+    margin-right: 0;
+}
+.contents03 > ul > div > li:nth-child(8){
+    margin-right: 0;
+}
+
+.contents03 > ul > div > li > .productName{
+    width: 17rem;
+}
+.productPrice{
+    width: 100%;
+    height: 2.5rem;
+}
+.productPrice p{
+    display: block;
+    font-size: 1.1rem;
+}
+.productPrice p strong{
+    color: #111;
+}
+
+/* banner01 */
+.banner01{
+    width: 100%;
+    height: 12.5rem;
+}
+
+/* contents04 */
+.contents04{
+    width: 100%;
+    height: 53rem;
+    background: #d87059;
+    padding-top: 1.4rem;
+}
+.contents04 > div > ul{
+    width: 100%;
+    height: 50rem;
+    margin-top: .6rem;
+}
+.contents04 > div > ul > div{
+    width: 100%;
+    height: 100%;
+}
+.contents04 > div > ul > div > li{
+    width: 15.625rem;
+    height: 24rem;
+    margin-right: 4.1rem;
+}
+.contents04 > div > ul > div > li:nth-child(4){
+    margin-right: 0;
+}
+.contents04 > div > ul > div > li:nth-child(8){
+    margin-right: 0;
+}
+
+.contents04 > div > ul > div > li > .productName{
+    width: 17rem;
+}
+
+/* contents05 */
+.contents05{
+    width: 100%;
+    height: 28rem;
+}
+
+/* contents06 */
+.contents06{
+    width: 100%;
+    height: 55rem;
+    background: #d87059;
+    padding-top: 1.4rem;
+}
+.contents06 > div > ul{
+    width: 100%;
+    height: 50rem;
+}
+.contents06 > div > ul > div{
+    width: 100%;
+    height: 25rem;
+}
+.contents06 > div > ul > div > li{
+    width: 15.625rem;
+    height: 100%;
+    margin-right: 4.1rem;
+}
+.contents06 > div > ul > div > li:nth-child(4){
+    margin-right: 0;
+}
+.contents06 > div > ul > div > li > .productName{
+    width: 17rem;
+}
+.contents06 > div > ul > div > li:last-child > .productName{
+    width: 18rem;
+}
+.contents06 > div > ul > div > li > .productDcPrice > .discount{
+    color: #eee;
+}
+.contents06 > div > ul > div > li > .productDcPrice > .preDiscount{
+    color: #ccc;
+}
+
+/* banner02 */
+.banner02{
+    width: 100%;
+    height: 12.5rem;
+}
+
+/* .productTimerImg > a > img{
+    border: solid 0.125rem #777;
+}
+.productImg > a > img{
+    border: solid 0.125rem #777;
+} */
+
+/* footer */
+.footerContainer{
+    width: 100%;
+    height: 21.875rem; /*25 / 21.875*/
+    background: #f9f9f9;
+    padding: 1.875rem 0;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.fLeft{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.fLogo{
+    width: 6.25rem;
+    height: 1.5625rem;
+}
+.fLogo a{
+    width: 100%;
+    height: 100%;
+}
+
+.fMenu{
+    width: 28.5rem;
+    float: left;
+    position: absolute;
+    top: .6rem;
+    left: 10rem;
+}
+.fMenu li{
+    float: left;
+}
+.fMenu li a{
+    display: inline;
+    line-height: 1.8rem;
+    padding: 0 .8rem;
+    font-size: 0.875rem;
+}
+.fMenu li:first-child a{
+    padding-left: 0;
+}
+.fMenu li:last-child a{
+    padding-right: 0;
+}
+.fMenu li:nth-child(2) a{
+    font-weight: bold;
+}
+
+.fMenu li a::after{
+    content: "";
+    display: inline;
+    width: 0.125rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #bbb;
+    margin-left: 0.8rem;
+}
+.fMenu li:last-child a:after{
+    display: none;
+}
+
+.fInfo{
+    margin-top: 2.2rem;
+    width: 100%; /*40rem*/
+    height: 12.2rem;
+}
+.fInfo p{
+    display: block;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+.fInfo p span{
+    margin-right: 1.2rem;
+    color: #777;
+}
+
+.copy{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.copy p{
+    display: block;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: #888;
+}
+
+.fRight{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.fSns{
+    width: 8.4rem;
+    height: 2.2rem;
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+}
+.fSns li{
+    width: 2.2rem;
+    height: 2.2rem;
+    float: left;
+    margin-right: .9rem;
+    opacity: 75%;
+}
+.fSns li:last-child{
+    margin-right: 0;
+}
+.fSns li a{
+    width: 100%; 
+    height: 100%;
+}
+.fSns li a img{
+    width: 100%;
+    height: 100%;
+}
+
+.callNum{
+    width: 25.6rem;
+    height: 13rem;
+    position: absolute;
+    border: solid 1px #666;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    right: 0;
+    bottom: .5rem;
+}
+.callNum p{
+    display: block;
+    line-height: 2rem;
+}
+.callNum p span{
+    font-weight: bold;
+    margin-right: .8rem;
+}
+.callNum p:first-child{
+    display: block;
+    line-height: 3rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1.8rem;
+}

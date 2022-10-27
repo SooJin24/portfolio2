@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠캣 리뉴얼</title>
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+
+    <header class="headerContainer">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="쿠캣 로고">
+            </a>
+        </h1>
+
+        <nav class="gnb">
+            <ul class="mainMenu clearfix">
+                <li>
+                    <a href="login.html">전체</a>
+                    <ul class="subMenu">
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">세일</a></li>
+                        <li><a href="#">간편요리</a></li>
+                        <li><a href="#">밥·면·반찬</a></li>
+                        <li><a href="#">간식·음료</a></li>
+                        <li><a href="#">떡·베이커리</a></li>
+                        <li><a href="#">육류</a></li>
+                        <li><a href="#">수산</a></li>
+                        <li><a href="#">식단관리</a></li>
+                        <li><a href="#">건강식품</a></li>
+                        <li><a href="#">홈·리빙</a></li>
+                        <li><a href="#">캠핑</a></li>
+                        <li><a href="#">전통주</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">신상품</a></li>
+                <li><a href="login.html">베스트10</a></li>
+                <li><a href="login.html">특가</a></li>
+                <li><a href="login.html">추천</a></li>
+                <li><a href="login.html">쿠캣겨울템</a></li>
+                <li><a href="login.html">이벤트</a></li>
+            </ul>
+        </nav>
+        
+        <ul class="hMenu clearfix">
+            <li><a href="login.html">
+                <img src="images/search.png" alt="search icon">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/cart.png" alt="cart icon">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/user.png" alt="user icon">
+            </a></li>
+            <li><a href="siteMap.html">
+                <img src="images/menu.png" alt="menu icon">
+            </a></li>
+        </ul>
+    </header> <!--header-->
+
+    <div class="slideContainer">
+        <ul class="slideList">
+            <li><a href="login.html">
+                <img src="images/slide01.png" alt="slideImg01">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/slide02.png" alt="slideImg02">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/slide03.png" alt="slideImg03">
+            </a></li>
+        </ul>
+
+        <ul class="dotList clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div> <!--slide-->
+
+    <div class="contetnsContainer clearfix">
+        <div class="contents01">
+            <div class="inner">
+                <div class="contents01">
+                    <div class="contentsTxt">
+                        <h2 class="mainTit">오늘의 타임딜</h2>
+                        <ul class="countdown clearfix">
+                            <li class="hours"></li>
+                            <li class="hours"></li>
+                            <li class="colon">:</li>
+                            <li class="minutes"></li>
+                            <li class="minutes"></li>
+                            <li class="colon">:</li>
+                            <li class="seconds"></li>
+                            <li class="seconds"></li>
+                        </ul>
+                        <a href="login.html" class="view">전체보기</a>
+                    </div>
+
+                    <ul class="productList">
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0101.png" alt="상품 이미지">
+                                </a>
+                           
+                            </div>
+                            <div class="productName">
+                                <a href="#">오프라이스 볶음밥 3팩 세트 (해시브라운베이컨/철판삼겹살/극한왕갈비/양념닭갈비/오징어삼겹살)</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">10,200원</span>
+                                <span class="discount">24%</span>
+                                <p><strong>7,800</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 2,289</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0102.png" alt="상품 이미지">
+                                </a>
+                                <div class="countdown"></div>
+                            </div>
+                            <div class="productName">
+                                <a href="#">국물의한수 버섯뚝배기불고기 400g</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">4,500원</span>
+                                <span class="discount">22%</span>
+                                <p><strong>3,500</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 27,155</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0103.png" alt="상품 이미지">
+                                </a>
+                                <div class="countdown"></div>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 쿠가네 감자탕 2.5kg</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">16,900원</span>
+                                <span class="discount">26%</span>
+                                <p><strong>12,500</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 28,982</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents02">
+            <div class="inner">
+                <div class="contentsTxt">
+                    <h2 class="mainTit">시선집중! 이주의 상품</h2>
+                    <a href="login.html" class="view">전체보기</a>
+                </div>
+
+                <ul class="productList">
+                    <!-- <div class="productSubList"> -->
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0201.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣X스시코우지 고기교자만두 420g</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">4,500원</span>
+                                <span class="discount">13%</span>
+                                <p><strong>3,900</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 2,501</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0202.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 곱순이탕 1065g</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">11,900원</span>
+                                <span class="discount">12%</span>
+                                <p><strong>10,500</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 482</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0203.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣포차 로제 치즈 닭바베큐 250g</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">7,500원</span>
+                                <span class="discount">11%</span>
+                                <p><strong>6,700</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 242</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0204.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">남향푸드또띠아 브리또 5종<!-- (콤비네이션/콰트로치즈/고구마치즈/불고기크림/까르보나라)--></a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">3,200원</span>
+                                <span class="discount">13%</span>
+                                <p><strong>2,800</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 320</p>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0205.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 냥냠분식 볶음밥 2종 (버터쉬림프/단짠소불고기)</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="discount">11%</span>
+                                <p><strong>2,400</strong>원</p>
+                                <span class="preDiscount">2,700원</span>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 4,947</p>
+                            </div>
+                        </li> -->
+                    <!-- </div> -->
+
+                    <!-- <button class="prevBtn02"></button>
+                    <button class="nextBtn02"></button> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents03">
+            <div class="inner">
+                <div class="contents03">
+                    <div class="contentsTxt">
+                        <h2 class="mainTit">후기 5천개 돌파! 인기상품</h2>
+                        <a href="login.html" class="view">전체보기</a>
+                    </div>
+
+                    <ul class="productList">
+                        <div class="productSubList">
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0301.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 고구마빵 120gX4개입</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>9,900</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,784</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0302.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 베리머치 딸기청 580ml</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>8,500</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,661</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0303.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 차돌된장찌개 600g</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>7,500</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,584</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0304.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 비벼먹는 짜글이 2종 (김치돼지/고추장돼지)</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>6,900</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,785</p>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0305.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 얼큰순댓국 700g</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>7,500</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,285</p>
+                                </div>
+                            </li> -->
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0306.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 반숙계란장 400g</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>5,900</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,026</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0307.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">쿠캣 쿠가든 수제 LA꽃갈비 700g</a>
+                                </div>
+                                <div class="productDcPrice">
+                                    <span class="preDiscount">26,500원</span>
+                                    <span class="discount">10%</span>
+                                    <p><strong>23,900</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,265  </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0308.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">띵커바디 아이스군고구마 120g</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>1,900</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,219</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productImg">
+                                    <a href="#">
+                                        <img src="images/contents0309.png" alt="상품 이미지">
+                                    </a>
+                                </div>
+                                <div class="productName">
+                                    <a href="#">띵커바디 닭가슴살 만두 2종 (담백한맛/매콤한맛)</a>
+                                </div>
+                                <div class="productPrice">
+                                    <p><strong>2,700</strong>원</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                    <p>후기 5,781</p>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner01">
+            <div class="inner">
+                <a href="#">
+                    <img src="images/banner01.png" alt="배너 이미지01">
+                </a>
+            </div>
+        </div>
+
+        <div class="contents04">
+            <div class="inner">
+                <div class="contentsTxt">
+                    <h2 class="mainTit">쿠캣 신상</h2>
+                    <a href="login.html" class="view">전체보기</a>
+                </div>
+
+                <ul class="productList">
+                    <div class="productSubList">
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0401.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 간장 꽃게장 500g (1마리)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>19,900</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0402.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">스웩베리 제주 대지 감자빵 500g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>12,900</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0403.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">모노키친 뻘속의 진주 바지락탕 KIT 630g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>9,900</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0404.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">미식명가 갈비탕 600g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>8,900</strong>원</p>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents040502.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 고기고기김치찌개 800g (2인분)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>9,900</strong>원</p>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0406.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">벤스쿠키 틴케이스 쿠키 2종 (스몰/미디움)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>16,000</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0407.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">미식명가 소고기 양곱창전골 920g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>13,900</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0408.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">거북이달린다 팔당 오징어볶음 400g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>6,900</strong>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0409.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">하남낙지 낙지볶음 350g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>9,900</strong>원</p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents05">
+            <div class="inner">
+                <div class="contents05">
+                    <div class="contentsTxt">
+                        <h2 class="mainTit">지금 핫한 할인, 런칭특가</h2>
+                        <a href="login.html" class="view">전체보기</a>
+                    </div>
+
+                    <ul class="productList">
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0501.png" alt="상품 이미지">
+                                </a>
+                                <div class="countdown"></div>
+                            </div>
+                            <div class="productName">
+                                <a href="#">[재입고] 8도포차 쪽갈비 2종 (오리지널/갈릭허브)</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">13,000원</span>
+                                <span class="discount">29%</span>
+                                <p><strong>9,260</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 59</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0502.jpg" alt="상품 이미지">
+                                </a>
+                                <div class="countdown"></div>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 도원결의 특수부위 3종 (두항정살/관자살/뽈살)</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">6,900원</span>
+                                <span class="discount">11%</span>
+                                <p><strong>6,140</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 9,516</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productTimerImg">
+                                <a href="#">
+                                    <img src="images/contents0503.jpg" alt="상품 이미지">
+                                </a>
+                                <div class="countdown"></div>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 복숭아쏙 찹쌀떡 540g</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">11,900원</span>
+                                <span class="discount">30%</span>
+                                <p><strong>8,300</strong>원</p>
+
+                                <!-- <ul class="countdown clearfix">
+                                    <li class="hours"></li>
+                                    <li class="hours"></li>
+                                    <li class="colon">:</li>
+                                    <li class="minutes"></li>
+                                    <li class="minutes"></li>
+                                    <li class="colon">:</li>
+                                    <li class="seconds"></li>
+                                    <li class="seconds"></li>
+                                </ul> -->
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 505</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents06">
+            <div class="inner">
+                <div class="contentsTxt">
+                    <h2 class="mainTit">MD추천</h2>
+                    <a href="login.html" class="view">전체보기</a>
+                </div>
+
+                <ul class="productList">
+                    <div class="productSubList">
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0601.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">사세 치킨 4종 (윙/봉/가라아게/근위튀김)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>5,400</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 2,179</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0602.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 양념 닭갈비 2종 (200g/550g)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>3,900</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 30,843</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0603.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">푸드렐라 치킨텐더 2종 (마일드/케이준)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>6,500</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 3,487</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0604.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">중앙닭강정 순살닭강정 3종 (보통/매콤/달콤)</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>14,900</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 204</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0605.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣 달콤바삭 새우강정 400g</a>
+                            </div>
+                            <div class="productPrice">
+                                <p><strong>9,500</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 4,536</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="productImg">
+                                <a href="#">
+                                    <img src="images/contents0606.png" alt="상품 이미지">
+                                </a>
+                            </div>
+                            <div class="productName">
+                                <a href="#">쿠캣포차 닭바베큐 2종 (매콤/로제치즈)</a>
+                            </div>
+                            <div class="productDcPrice">
+                                <span class="preDiscount">7,500원</span>
+                                <span class="discount">11%</span>
+                                <p><strong>6,700</strong>원</p>
+                            </div>
+                            <div class="like">
+                                <a href="#"><img src="images/like.png" alt="찜하기 아이콘"></a>
+                                <p>후기 8,702</p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner02">
+            <div class="inner">
+                <a href="#">
+                    <img src="images/banner02.png" alt="배너 이미지02">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerContainer clearfix">
+        <div class="inner">
+            <div class="fLeft">
+                <h1 class="fLogo">
+                    <a href="index.html">
+                        <img src="images/fLogo666.png" alt="쿠캣 로고">
+                    </a>
+                </h1>
+
+                <ul class="fMenu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+
+                <div class="fInfo">
+                    <p><span>대표자</span>이문주</p>
+                    <p><span>주소</span>서울특별시 강남구 영동대로112길 36, 3층, 지하 1층 (삼성동, 오티씨타워)</p>
+                    <p><span>고객센터</span>1688-3525</p>
+                    <p><span>사업자등록번호</span>110-86-12995</p>
+                    <p><span>통신판매업 신고번호</span>2018-서울강남-01681</p>
+                    <p><span>마케팅 제휴문의</span>marketing@cookat.co</p>
+                    <p><span>상품 제휴문의</span>product@cookat.co</p>
+                    <p><span>개인정보보호 책임자</span>주지석 (jiseok.joo@cookat.co)</p>
+                </div>
+
+                <div class="copy">
+                    <p>Copyright &copy; 쿠캣. All rights reserved.</p>
+                </div>
+            </div>
+
+            <div class="fRight">
+                <!-- <div class="callNum">
+                    <p>1688-3525</p>
+                    <P><span>평일</span>10:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</P>
+                    <P><span>주말</span>10:00 ~ 13:00</P>
+                </div> -->
+
+                <!-- <ul class="fMenu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul> -->
+
+                <ul class="fSns">
+                    <li><a href="#" title="쿠캣 인스타그램 바로가기">
+                        <img src="images/snsInstagram.png" alt="인스타그램 로고">
+                    </a></li>
+                    <li><a href="#" title="쿠캣 페이스북 바로가기">
+                        <img src="images/snsFacebook.png" alt="페이스북 로고">
+                    </a></li>
+                    <li><a href="#" title="쿠캣 유튜브 바로가기">
+                        <img src="images/snsYoutube.png" alt="유튜브 로고">
+                    </a></li>
+                </ul>
+
+                <div class="callNum">
+                    <p>1688-3525</p>
+                    <P><span>평일</span>10:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</P>
+                    <P><span>주말</span>10:00 ~ 13:00</P>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer> <!--footer-->
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠캣 로그인페이지</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <header class="headerContainer">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="쿠캣 로고">
+            </a>
+        </h1>
+
+        <nav class="gnb">
+            <ul class="mainMenu clearfix">
+                <li>
+                    <a href="login.html">전체</a>
+                    <ul class="subMenu">
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">세일</a></li>
+                        <li><a href="#">간편요리</a></li>
+                        <li><a href="#">밥·면·반찬</a></li>
+                        <li><a href="#">간식·음료</a></li>
+                        <li><a href="#">떡·베이커리</a></li>
+                        <li><a href="#">육류</a></li>
+                        <li><a href="#">수산</a></li>
+                        <li><a href="#">식단관리</a></li>
+                        <li><a href="#">건강식품</a></li>
+                        <li><a href="#">홈·리빙</a></li>
+                        <li><a href="#">캠핑</a></li>
+                        <li><a href="#">전통주</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">신상품</a></li>
+                <li><a href="login.html">베스트10</a></li>
+                <li><a href="login.html">특가</a></li>
+                <li><a href="login.html">추천</a></li>
+                <li><a href="login.html">쿠캣겨울템</a></li>
+                <li><a href="login.html">이벤트</a></li>
+            </ul>
+        </nav>
+        
+        <ul class="hMenu clearfix">
+            <li><a href="login.html">
+                <img src="images/search.png" alt="search icon">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/cart.png" alt="cart icon">
+            </a></li>
+            <li><a href="login.html">
+                <img src="images/user.png" alt="user icon">
+            </a></li>
+            <li><a href="siteMap.html">
+                <img src="images/menu.png" alt="menu icon">
+            </a></li>
+        </ul>
+    </header> <!--header-->
+
+    <div class="loginContainer">
+        <h2 class="loginTit">로그인</h2>
+
+        <div class="idPw">
+            <div class="id">
+                <p>아이디</p>
+                <input type="text" placeholder="ID">
+            </div>
+
+            <div class="pw">
+                <p>비밀번호</p>
+                <input type="password" placeholder="password">
+            </div>
+
+            <input type="checkbox" id="rememberLogin" name="rememberLogin">
+            <label for="rememberLogin">로그인 상태 유지</label>
+
+            <input type="checkbox" id="idSave" name="idSave">
+            <label for="idSave">아이디 저장</label>
+            <br>
+            <input type="button" value="회원가입" class="joinBtn">
+            <input type="button" value="로그인" class="loginBtn">
+            <br>
+            <a href="#" class="findIdPw">아이디 / 비밀번호 찾기 ></a>
+            <a href="#" class="nonMember">비회원 주문 ></a>
+
+            <ul class="snsLogin">
+                <p>SNS 계정으로 로그인</p>
+                <li><a href="#">
+                    <img src="images/snsKakao.png" alt="카카오톡 로고">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/snsNaver.png" alt="네이버 로고">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/snsFacebook02.png" alt="페이스북 로고">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/snsGoogle.png" alt="구글 로고">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/snsApple.png" alt="애플 로고">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footerContainer clearfix">
+        <div class="inner">
+            <div class="fLeft">
+                <h1 class="fLogo">
+                    <a href="index.html">
+                        <img src="images/fLogo666.png" alt="쿠캣 로고">
+                    </a>
+                </h1>
+
+                <ul class="fMenu">
+                    <li><a href="login.html">이용약관</a></li>
+                    <li><a href="login.html">개인정보 처리방침</a></li>
+                    <li><a href="login.html">공지사항</a></li>
+                </ul>
+
+                <div class="fInfo">
+                    <p><span>대표자</span>이문주</p>
+                    <p><span>주소</span>서울특별시 강남구 영동대로112길 36, 3층, 지하 1층 (삼성동, 오티씨타워)</p>
+                    <p><span>고객센터</span>1688-3525</p>
+                    <p><span>사업자등록번호</span>110-86-12995</p>
+                    <p><span>통신판매업 신고번호</span>2018-서울강남-01681</p>
+                    <p><span>마케팅 제휴문의</span>marketing@cookat.co</p>
+                    <p><span>상품 제휴문의</span>product@cookat.co</p>
+                    <p><span>개인정보보호 책임자</span>주지석 (jiseok.joo@cookat.co)</p>
+                </div>
+
+                <div class="copy">
+                    <p>Copyright &copy; 쿠캣. All rights reserved.</p>
+                </div>
+            </div>
+
+            <div class="fRight">
+                <!-- <div class="callNum">
+                    <p>1688-3525</p>
+                    <P><span>평일</span>10:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</P>
+                    <P><span>주말</span>10:00 ~ 13:00</P>
+                </div> -->
+
+                <!-- <ul class="fMenu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul> -->
+
+                <ul class="fSns">
+                    <li><a href="#" title="쿠캣 인스타그램 바로가기">
+                        <img src="images/snsInstagram.png" alt="인스타그램 로고">
+                    </a></li>
+                    <li><a href="#" title="쿠캣 페이스북 바로가기">
+                        <img src="images/snsFacebook.png" alt="페이스북 로고">
+                    </a></li>
+                    <li><a href="#" title="쿠캣 유튜브 바로가기">
+                        <img src="images/snsYoutube.png" alt="유튜브 로고">
+                    </a></li>
+                </ul>
+
+                <div class="callNum">
+                    <p>1688-3525</p>
+                    <P><span>평일</span>10:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</P>
+                    <P><span>주말</span>10:00 ~ 13:00</P>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer> <!--footer-->
+    
+</body>
+</html>
